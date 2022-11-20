@@ -19,3 +19,15 @@ SELECT * FROM Customers WHERE City = 'Berlin' AND PostalCode = 12209;
 --Select all records where the City column has the value 'Berlin' or 'London'.
 
 SELECT * FROM Customers WHERE City = 'Berlin' OR City = 'London';
+
+--Select all records from the Customers table, sort the result alphabetically by the column City.
+
+SELECT * FROM Customers ORDER BY City;
+
+--Select all records from the Customers table, sort the result reversed alphabetically by the column City.
+
+SELECT * FROM Customers ORDER BY City DESC;
+
+--Select all records from the Customers table, sort the result alphabetically, first by the column Country, then, by the column City.
+
+SELECT * FROM Customers ORDER BY Country, City ASC;
